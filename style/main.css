@@ -6,6 +6,8 @@
 /* ---------------- */
 
 
+
+/* Elementos da base */
 *{
     padding: 0;
     margin: 0;
@@ -40,3 +42,61 @@ header nav a{
 header nav a:hover{
     color: #fff; 
 }
+/* --------------- */
+
+
+
+/* Filme em destaque */
+.filme-em-destaque{
+    background: linear-gradient(to right, #000000,#000000ad,#00000000 ), url("../img/attack-titan-03.jpg");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5%;
+}
+
+.filme-em-destaque .container{
+    width: 55%;
+}
+
+.filme-em-destaque .titulo img{
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+.filme-em-destaque .descricao{
+    margin-bottom: 30px;
+}
+
+.botao{
+    background-color: rgba(255, 255, 255, 0.788);
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.informacao{
+    background-color: rgba(94, 93, 93, 0.412);
+    color: white;
+    margin-left: 5px;
+}
+
+.informacao:hover{
+    background-color: rgba(94, 93, 93, 0.809);
+}
+
+.caixa-de-botoes i{
+    margin-right: 8px;
+}
+
