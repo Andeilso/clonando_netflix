@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    text-align: center;
+    vertical-align: middle;
+}
+
+img{
+    margin-top: 50px;
+    height: 400px;
+}
+
+h2{
+    font-size: 100px;
+}
+
+p{
+    margin: 10px;
+    font-size: 30px;
+}

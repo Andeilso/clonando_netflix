@@ -1,0 +1,94 @@
+@media (max-width: 650px){
+    h3{
+        font-size: 1.6rem;
+        margin: 5px 20px 0px 25px;
+        padding: 22px;
+    }
+
+    .catalogo .card{
+        width: 450px;
+        height: 230px;
+        margin: 20px;
+    }
+    
+    .catalogo .card img{
+        width: 450px;
+    }
+
+    .catalogo .card:hover{
+        transform: scale(1);
+    }  
+    
+    .catalogo .card p{
+        right: -10px;
+
+        padding: 2px 20px 5px 0px;
+        width: 75%;
+    
+        font-size: 18px;
+    }
+
+    .catalogo .card .item{
+        width: 450px;
+    }
+}
+
+@media (max-width: 535px){
+    header .logo img {
+        width: 150px;
+    }    
+
+    h3{
+        font-size: 1.6rem;
+        margin: 5px 20px 0px 25px;
+        padding: 15px;
+    }    
+
+    .catalogo .card{
+        width: 300px;
+        height: 150px;
+        margin: 15px;
+    }    
+    
+    .catalogo .card img{
+        width: 300px;
+    }  
+    
+    .catalogo .card p{
+        right: -1px;
+
+        padding: 2px 20px 5px 0px;
+        width: 75%;
+    
+        font-size: 19px;
+    }    
+    
+    .catalogo .card .item{
+        width: 300px;
+    }    
+}    
+
+@media (min-width: 1480px){
+    .catalogo .card{
+        width: 380px;
+        height: 190px;
+        margin: 25px 15px;
+    }
+    
+    .catalogo .card img{
+        width: 380px;
+    }
+    
+    .catalogo .card p{
+        right: -15px;
+
+        padding: 2px 25px 5px 0px;
+        width: 70%;
+    
+        font-size: 22px;
+    }
+    
+    .catalogo .card .item{
+        width: 380px;
+    }
+}
