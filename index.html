@@ -5,26 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Replicando Netflix</title>
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="./style/main.css">
+
+    <!-- Responsividade CSS -->
+    <link rel="stylesheet" href="style/responsividade.css">
+
+    <!-- Owl Carrossel CSS -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    
 </head>
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">Netflix</h2>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
-            </nav>
+            <h2 class="logo">
+                <a href="/"> <img src="./img/logos/anima-play.png" alt="anima play"> </a>
+            </h2>
         </div>
     </header>
+
+    <nav class="menu">
+        <i class="fas fa-angle-right seta"></i>
+        <a href="/">
+            <i class="fas fa-home"></i>
+            Inicio
+        </a>
+
+        <a href="./rotas/catalogo.html">
+            <i class="fas fa-bookmark"></i>
+            Catálogo
+        </a>
+
+        <a href="/rotas/filmes.html">
+            <i class="fas fa-film"></i>
+            Filmes
+        </a>
+    </nav>
 
     <main>
         <div class="filme-em-destaque">
             <div class="container">
                 <h3 class="titulo">
-                    <img src="./img/logo-attack-on-titan.png" alt="attack on titans">
+                    <img src="./img/logos/logo-attack-on-titan.png" alt="attack on titans">
                 </h3>
 
                 <p class="descricao"> Titãs estão quase exterminando a raça humana. Porém alguns estão dispostos a formar um exército de ataque aos seres assassinos. O jovem Eren, após ver sua mãe ser devorada por um titã, decide que não deixará nenhum deles vivo e buscará sua vingança completa. </p>
@@ -42,9 +66,53 @@
                 </div>
             </div>
         </div>
+
+        <div class="carrossel destaque">
+            <h3>Em Destaque</h3>
+
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="img/posters/destaques/black-clover.jpg" alt="Black clover poster"></div>
+                <div class="item"><img src="img/posters/destaques/blue-exorcist.jpg" alt="Blue exorcist poster"></div>
+                <div class="item"><img src="img/posters/destaques/death-note.jpg" alt="Death note poster"></div>
+                <div class="item"><img src="img/posters/destaques/fairy-tail.jpg" alt="Fairy tail poster"></div>
+                <div class="item"><img src="img/posters/destaques/fullmetal-alchemist-brotherhood.jpg" alt="Fullmetal alchemits - Brotherhood poster"></div>
+                <div class="item"><img src="img/posters/destaques/goblin-slayer.jpg" alt="Goblin slayer poster"></div>
+                <div class="item"><img src="img/posters/destaques/hunter-x-hunter.jpg" alt="Hunter x Hunter poster"></div>
+                <div class="item"><img src="img/posters/destaques/one-punch-man.jpg" alt="One punch man poster"></div>
+                <div class="item"><img src="img/posters/destaques/overlord.jpg" alt="Overlord poster"></div>
+                <div class="item"><img src="img/posters/destaques/reincarnated-as-a-slime.jpg" alt="I Reincarnated as a slime poster"></div>
+                <div class="item"><img src="img/posters/destaques/the-shield-hero.jpg" alt="The rising of the shield hero poster"></div>
+                <div class="item"><img src="img/posters/destaques/one-piece.jpg" alt="One piece poster"></div>
+            </div>
+        </div>
+
+        <div class="carrossel esporte">
+            <h3>Da até vontade de praticar</h3>
+
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="img/posters/esporte/hajime-no-ippo.jpg" alt="Hajime no ippo poster"></div>
+                <div class="item"><img src="img/posters/esporte/haikyu.jpg" alt="Haikyu poster"></div>
+                <div class="item"><img src="img/posters/esporte/megalo-box.jpg" alt="Megalo box poster"></div>
+                <div class="item"><img src="img/posters/esporte/kuroko-no-basket.jpg" alt="Kuroko no basket poster"></div>
+                <div class="item"><img src="img/posters/esporte/capitao-tsubasa.jpg" alt="Capitão Tsubasa poster"></div>
+                <div class="item"><img src="img/posters/esporte/ahiru-no-sora.jpg" alt="Ahiru no sora poster"></div>
+                <div class="item"><img src="img/posters/esporte/diamond-no-ace.jpg" alt="Diamond no ace poster"></div>
+                <div class="item"><img src="img/posters/esporte/inazuma-eleven.jpg" alt="Inazuma eleven poster"></div>
+                <div class="item"><img src="img/posters/esporte/hinomaru-sumo.jpg" alt="Inazuma eleven orion poster"></div>
+                <div class="item"><img src="img/posters/esporte/prince-of-stride-alternative.jpg" alt="Prince of stride alternative poster"></div>
+            </div>
+        </div>
     </main>
 
+    <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/b28ddcaa0a.js" crossorigin="anonymous"></script>
 
+    <!-- Owl Carrossel script -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+    <!-- Main Script -->
+    <script src="./js/main-script.js"></script>
 </body>
 </html>

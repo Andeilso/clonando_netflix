@@ -1,0 +1,87 @@
+/* Resposividade */
+
+@media (max-width: 640px){
+    .menu{
+        display: none;
+    }
+
+    header .container{
+        display: inline;
+        text-align: center;
+        margin: 0px;
+    }
+
+    header .container .logo img{
+        margin: 8px;
+    }
+
+    .filme-em-destaque{
+        background: linear-gradient(to right, #000000,#000000ad,#00000000 ), url("../img/posters/poster-destaque/attack-titan-03-poster.jpg");
+        background-size: cover;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        height: 85vh;
+    }
+    
+    .filme-em-destaque .container{
+        width: 95%;
+    }
+    
+    .filme-em-destaque .titulo img{
+        width: 70%;
+        margin: 0px;
+    }
+    
+    .filme-em-destaque .descricao{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    
+    .botao{
+        background-color: rgba(255, 255, 255, 0.788);
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+    
+    .informacao{
+        background-color: rgba(94, 93, 93, 0.659);
+        color: white;
+    }
+}
+
+@media (min-width: 850px){
+    .filme-em-destaque{
+        height: 80vh;
+    }
+
+    .filme-em-destaque .container{
+        width: 50%;
+    }
+
+    .filme-em-destaque .titulo img{
+        width: 370px;
+        margin-bottom: 5px;
+    }
+    
+    .filme-em-destaque .descricao{
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1100px){
+    .filme-em-destaque{
+        height: 90vh;
+    }
+
+    .filme-em-destaque .container{
+        width: 36%;
+    }
+
+    .filme-em-destaque .titulo img{
+        width: 400px;
+        margin-bottom: 5px;
+    }
+}
+

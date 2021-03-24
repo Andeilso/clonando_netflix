@@ -1,7 +1,7 @@
 /* Variaveis em Css */
 :root{
     --vermelho: #E50914;
-    --preta: #141414;
+    --preto: #141414;
 }
 /* ---------------- */
 
@@ -14,33 +14,78 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 body{
-    background: var(--preta);
+    background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
 
 header .container{
+    text-align: center;
+}
+
+header .logo img{
+    width: 180px;
+    margin: 12px;
+}
+
+nav{
+    position: fixed;
+    top: 45vh;
+    left: 0px;
+    z-index: 2;
+
+    overflow: hidden;
+    
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    height: 80px;
+    width: 30px;
+    transition: .5s;
 }
 
-header .logo{
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size: 40px;
-    margin-left: 10px;
+nav:hover{
+    top: 0;
+    height: 100vh;
+    width: 150px;
+    background-color: #040404d9;
 }
 
-header nav a{
+nav a{
     text-decoration: none;
     color: #AAA;
-    margin-right: 18px;
+
+    margin: 55px;
+    height: 40px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+    transition: .3s;
 }
 
-header nav a:hover{
-    color: #fff; 
+nav a:hover{
+    color: #fff;
+    overflow: unset;
+}
+
+.menu i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.menu .seta{
+    margin: 5px 10px;
+    position: absolute;
+    font-size: 25px;
 }
 /* --------------- */
 
@@ -48,7 +93,7 @@ header nav a:hover{
 
 /* Filme em destaque */
 .filme-em-destaque{
-    background: linear-gradient(to right, #000000,#000000ad,#00000000 ), url("../img/attack-titan-03.jpg");
+    background: linear-gradient(to right, #000000,#000000ad,#00000000 ), url("../img/posters/poster-destaque/attack-titan-03.jpg");
     background-size: cover;
     height: 400px;
     display: flex;
@@ -60,6 +105,11 @@ header nav a:hover{
 
 .filme-em-destaque .container{
     width: 55%;
+    transition: .3s;
+}
+
+.filme-em-destaque .container:hover{
+    transform: scale(1.1)
 }
 
 .filme-em-destaque .titulo img{
@@ -68,7 +118,7 @@ header nav a:hover{
 }
 
 .filme-em-destaque .descricao{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .botao{
@@ -76,7 +126,7 @@ header nav a:hover{
     border: none;
     padding: 15px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     transition: .5s ease all;
@@ -99,4 +149,26 @@ header nav a:hover{
 .caixa-de-botoes i{
     margin-right: 8px;
 }
+/* ------------ */
 
+
+
+/* Owl carrosel */
+.carrossel{
+    margin: 30px 0px;
+}
+
+.carrossel h3{
+    margin: 5px 10px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.carrossel .item{
+    padding: 5px;
+    transition: .3s;
+    margin: 0 auto;
+}
+
+.carrossel .item:hover{
+    transform: scale(1.1);
+}
